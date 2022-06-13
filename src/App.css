@@ -4,3 +4,11 @@ body {
   background-color: #a9ff9e;
   text-align: center;
 }
+
+.app-title {
+  margin-top: 75px;
+  margin-bottom: 40px;
+  font-size: 76px;
+  color: #1c6600;
+  font-family: "Spline Sans Mono", monospace;
+}
