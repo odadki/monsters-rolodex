@@ -1,9 +1,11 @@
 .search-box {
   -webkit-appearance: none;
+  display: block;
+  margin: 0 auto;
   border: none;
   outline: none;
-  padding: 10px;
-  width: 150px;
+  padding: 2px;
+  width: 250px;
   line-height: 30px;
   margin-bottom: 30px;
 }

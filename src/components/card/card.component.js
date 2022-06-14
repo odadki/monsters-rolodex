@@ -1,16 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import "./card.styles.css";
 
 const Card = ({ monster }) => {
-  const { id, name, email } = monster;
+  const { id, name, email, website, company } = monster;
+  const [studentDetails, setStudentDetails] = useState(false);
+  const [moreInfoButton, setMoreInfoButton] = useState(false);
+
+  const showDetails = () => {
+    setStudentDetails((current) => !current);
+    setMoreInfoButton(!moreInfoButton);
+  };
+
   return (
-    <div className="card-container" key={id}>
+    <div className="container card-container" key={id}>
       <img
         alt={`monster ${name}`}
         src={`https://robohash.org/${id}?set=set2&size=180x180`}
       />
-      <h2>{name}</h2>
-      <p>{email}</p>
+      <h3 className="monster-name text-center">{name}</h3>
+      <button className="show-info-button" onClick={showDetails}>
+        {moreInfoButton ? "Show less" : "More info"}
+      </button>
+      {studentDetails && (
+        <div>
+          <p className="p-info">{`Email: ${email}`}</p>
+          <p className="p-info">{`Company: ${company.name}`}</p>
+          <p className="p-info">{`Website: ${website}`}</p>
+        </div>
+      )}
     </div>
   );
 };

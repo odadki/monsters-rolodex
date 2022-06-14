@@ -15,3 +15,31 @@
 .card-container:hover {
   transform: scale(1.05);
 }
+
+.monster-name {
+  font-family: "Zilla Slab", serif;
+}
+
+.p-info {
+  text-align: left;
+  margin-bottom: 5px;
+  line-height: 12px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.show-info-button {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+@media (max-width: 1500px) {
+  .card-container {
+    padding: 20px;
+  }
+  .monster-name {
+    font-size: 14px;
+  }
+
+  .p-info {
+    font-size: 12px;
+  }
+}

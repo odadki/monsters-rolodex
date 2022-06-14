@@ -15,8 +15,6 @@ const App = () => {
       .then((users) => setMonsters(users));
   }, []);
 
-  useEffect(() => {}, []);
-
   const onSearchChange = (event) => {
     const searchFieldString = event.target.value.toLocaleLowerCase();
     setSearchField(searchFieldString);
@@ -40,13 +38,15 @@ const App = () => {
             </div>
           );
         })} */}
-      <h1 className="app-title">Monster Rolodex</h1>
-      <SearchBox
-        className="monsters-search-box"
-        onChangeHandler={onSearchChange}
-        placeholder="search monster"
-      />
-      <CardList monsters={filteredMonsters} />
+      <div className="d-block text-center">
+        <h1 className="app-title">Monster Rolodex</h1>
+        <SearchBox
+          className="monsters-search-box"
+          onChangeHandler={onSearchChange}
+          placeholder="search monster"
+        />
+        <CardList monsters={filteredMonsters} />
+      </div>
     </div>
   );
 };
