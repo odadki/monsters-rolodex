@@ -10,6 +10,8 @@
   backface-visibility: hidden;
   transform: translateZ(0);
   transition: transform 0.25s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .card-container:hover {
@@ -17,7 +19,9 @@
 }
 
 .monster-name {
-  font-family: "Zilla Slab", serif;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px !important;
+  text-transform: uppercase;
 }
 
 .p-info {
@@ -29,6 +33,7 @@
 
 .show-info-button {
   font-family: "Red Hat Display", sans-serif;
+  text-transform: lowercase;
 }
 
 @media (max-width: 1500px) {
