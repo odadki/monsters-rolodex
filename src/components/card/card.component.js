@@ -23,9 +23,20 @@ const Card = ({ monster }) => {
       </button>
       {studentDetails && (
         <div>
-          <p className="p-info">{`Email: ${email}`}</p>
-          <p className="p-info">{`Company: ${company.name}`}</p>
-          <p className="p-info">{`Website: ${website}`}</p>
+          <p className="p-info">
+            <span className="user-info">Email: </span>
+            {email}
+          </p>
+          <p className="p-info">
+            {" "}
+            <span className="user-info">Company: </span>
+            {company.name}
+          </p>
+          <p className="p-info">
+            {" "}
+            <span className="user-info">Website: </span>
+            {website}
+          </p>
         </div>
       )}
     </div>

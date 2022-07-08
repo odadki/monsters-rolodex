@@ -1,11 +1,11 @@
 .card-container {
   display: flex;
   flex-direction: column;
-  background-color: #95dada;
+  background-color: #cefffb;
   border: 1px solid grey;
   border-radius: 5px;
   padding: 25px;
-  cursor: pointer;
+  /* cursor: pointer; */
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
   transform: translateZ(0);
@@ -15,25 +15,37 @@
 }
 
 .card-container:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 
 .monster-name {
   font-family: "Barlow", sans-serif;
-  font-size: 20px !important;
+  font-size: 19px !important;
   text-transform: uppercase;
 }
 
 .p-info {
   text-align: left;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   line-height: 12px;
   font-family: "Red Hat Display", sans-serif;
+}
+
+.user-info {
+  border-bottom: 1px solid black;
 }
 
 .show-info-button {
   font-family: "Red Hat Display", sans-serif;
   text-transform: lowercase;
+  border: 1px solid gray;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.show-info-button:hover {
+  color: green;
+  cursor: pointer;
 }
 
 @media (max-width: 1500px) {
